@@ -9,7 +9,7 @@ module.exports = function getLoveTrianglesCount(preferences) {
     a=preferences[i];
     b=preferences[a-1];
     c=preferences[b-1];
-    if(i==c-1) count++;
+    if(a!=i+1 && i==c-1) count++;
   }
   return count/3;
 
